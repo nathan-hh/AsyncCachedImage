@@ -22,7 +22,8 @@ Pod::Spec.new do |s|
     s.source           = { :git => 'https://github.com/nathan-hh/AsyncCachedImage.git', :tag => s.version.to_s }
   
     s.ios.deployment_target = '15.0'
-
+    s.pod_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
+    s.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
     s.swift_version = "5.5"
     s.source_files = 'Sources/**/*.{h,m,swift}'
   # s.resources = 'Sources/**/*'
