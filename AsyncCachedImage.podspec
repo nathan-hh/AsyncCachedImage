@@ -25,8 +25,7 @@ Pod::Spec.new do |s|
 
     s.swift_version = "5.5"
     s.source_files = 'Sources/**/*.{h,m,swift}'
-
-    s.resources = 'Sources/**/*.{png,jpeg,jpg,storyboard,xib,xcassets}'
+  # s.resources = 'Sources/**/*'
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
     s.frameworks = 'UIKit' ,'AVFoundation', 'SwiftUI'
