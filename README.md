@@ -70,7 +70,7 @@ AsyncImageView(url: URL(string: "https://fastly.picsum.photos/id/16/2500/1667.jp
 Setting authentication header
 
 ```swift
-let header = AuthenticationHeader(key: "Bearer TOKEN", value: "Authorization")
+let header = AuthenticationHeader(key: "Authorization", value: "Bearer TOKEN")
 AsyncImageConfiguration.shared.setAuthentication(header: header)
 ```
 
